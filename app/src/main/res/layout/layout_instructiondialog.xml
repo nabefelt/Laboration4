@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="20"
+        android:text="Welcome\n\n1.Allow the app to use the gps and press the button named Locate me\n\n2. Your post will be saved on the pin named PostMarker (hold on the marker and drag it if you want to a more accurate place)\n\n3. Press save postMarker where you can add a picture and a text to the post\n\n4. You can find your saved postmarkers in the top right corner along with other options"
+
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="158dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
