@@ -1,4 +1,4 @@
-package com.example.getlocation2;
+package com.example.getlocation2.model;
 
 import android.content.Context;
 

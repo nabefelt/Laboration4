@@ -9,13 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.getlocation2.model.MapPoster;
+import com.example.getlocation2.model.dataHolder;
 
 import java.util.ArrayList;
 
 public class savedMapPosters extends AppCompatActivity {
 
-    public dataHolder dataHolder=new dataHolder(this);
+    public com.example.getlocation2.model.dataHolder dataHolder=new dataHolder(this);
     ListAdapter adapter; //hold the list of markPosters
     TextView noMapPosters;
     ArrayList<MapPoster> mapPosters=new ArrayList<MapPoster>();

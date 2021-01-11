@@ -8,8 +8,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.view.View;
 import android.widget.Toast;
+
+import com.example.getlocation2.model.saveData;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,8 +25,8 @@ public class camerActivity extends Activity {
 
 
     private String currentPhotoPath=null; // the path for the picture
-    public static final int camera_code = 7; // the code in request permission
-    public static final int camera_request = 8; //sets the request code for the camera in activityresult
+    private static final int camera_code = 7; // the code in request permission
+    private static final int camera_request = 8; //sets the request code for the camera in activityresult
 
 
 
@@ -45,7 +46,7 @@ public class camerActivity extends Activity {
     /**
      * method for taking a picture
      */
-    public void takePicture(){
+    private void takePicture(){
         String filename="photo";
         File storageDirectory=getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED){
@@ -78,7 +79,7 @@ public class camerActivity extends Activity {
      * saved the path to the picture
      */
 
-    public void saveData(){
+    private void saveData(){
         saveData saveData=new saveData();
         saveData.savePicturePath(this,currentPhotoPath); // saves the
     }

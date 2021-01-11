@@ -1,7 +1,6 @@
-package com.example.getlocation2;
+package com.example.getlocation2.model;
 
 import android.content.Context;
-import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,10 +9,10 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class readData {
-    readData(){
+    public readData(){
 
     }
-    ArrayList<MapPoster> mapPosters =new ArrayList<MapPoster>();
+
 
 
     /**
@@ -22,6 +21,7 @@ public class readData {
      * @return
      */
     public ArrayList<MapPoster> readMapPosters(Context context){
+         ArrayList<MapPoster> mapPosters =new ArrayList<MapPoster>();
         try {
             String filename = "mapPosters.txt";
             File directory = context.getFilesDir();

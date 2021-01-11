@@ -1,8 +1,6 @@
-package com.example.getlocation2;
+package com.example.getlocation2.model;
 
 import android.content.Context;
-
-import com.google.android.gms.maps.model.LatLng;
 
 import java.io.File;
 import java.io.FileOutputStream;

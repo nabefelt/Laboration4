@@ -11,7 +11,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class InstructionDialog extends AppCompatDialogFragment {
-    private EditText editText;
+
 
     /**
      *

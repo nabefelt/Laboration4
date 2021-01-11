@@ -2,7 +2,6 @@ package com.example.getlocation2;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -14,6 +13,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.getlocation2.model.readData;
 
 import androidx.appcompat.app.AppCompatDialogFragment;
 
@@ -74,18 +75,6 @@ public class MapPosterDialog extends AppCompatDialogFragment {
         }
 
 
-    }
-
-
-
-
-
-
-    public void setMapPoster(Context context,MapPoster mapPoster){
-        text=mapPoster.getText();
-        photoPath=mapPoster.getPhotoPath();
-        longitude2=mapPoster.getLongitude();
-        latitide2=mapPoster.getLatitude();
     }
 
 

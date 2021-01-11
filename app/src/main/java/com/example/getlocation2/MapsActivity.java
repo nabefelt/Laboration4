@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.getlocation2.model.MapPoster;
+import com.example.getlocation2.model.dataHolder;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -42,7 +44,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private double latitude = 0;
     private  Marker marker;
 
-    public dataHolder dataHolder=new dataHolder(this);
+    protected com.example.getlocation2.model.dataHolder dataHolder=new dataHolder(this);
 
     private Button button;
 

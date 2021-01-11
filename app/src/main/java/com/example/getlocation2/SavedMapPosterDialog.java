@@ -4,16 +4,16 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.getlocation2.model.MapPoster;
+import com.example.getlocation2.model.readData;
 
 import androidx.appcompat.app.AppCompatDialogFragment;
 
@@ -82,7 +82,7 @@ public class SavedMapPosterDialog extends AppCompatDialogFragment {
 
 
 
-    public void setMapPoster(Context context,MapPoster mapPoster){
+    public void setMapPoster(Context context, MapPoster mapPoster){
         text=mapPoster.getText();
         photoPath=mapPoster.getPhotoPath();
         longitude2=mapPoster.getLongitude();
